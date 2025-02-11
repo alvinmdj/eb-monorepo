@@ -35,7 +35,7 @@ after creating a firebase project, we can generate the service account from `pro
 
 save and put it to the root project directory, rename as `serviceAccountKey.json`.
 
-after that, we can reference it inside `config/firebaseConfig.ts`.
+after that, we can import it inside `config/firebaseConfig.ts`.
 
 ## Run local emulator
 

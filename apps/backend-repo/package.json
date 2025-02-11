@@ -1,0 +1,32 @@
+{
+  "name": "backend-repo",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "",
+  "engines": {
+    "node": "22"
+  },
+  "main": "dist/core/app.js",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx watch core/app.ts",
+    "emulator": "npm run build && firebase emulators:start --only functions",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "@repo/shared": "*",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "firebase-admin": "^13.1.0",
+    "firebase-functions": "^6.3.1"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/express": "^5.0.0",
+    "@types/node": "^22.13.1",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.3"
+  }
+}

@@ -1,15 +1,30 @@
-# Backend repo
+# EB back-end with Express.js & Firebase Admin
 
-## Run app
+## Getting started
+
+Install dependencies:
 
 ```bash
+npm install
+```
+
+Setup firebase `serviceAccountKey.json`:
+
+```bash
+# copy the example json & fill the values
+cp serviceAccountKey.example.json serviceAccountKey.json
+```
+
+Run app:
+
+```bash
+# dev mode
+npm run dev
+# default base url: http://localhost:4000
+
 # with firebase emulators functions
 npm run emulator
 # base url should be: http://127.0.0.1:5001/<project-id>/us-central1/api
-
-# dev mode
-npm run dev
-# base url: localhost:4000
 ```
 
 ## Setup firebase

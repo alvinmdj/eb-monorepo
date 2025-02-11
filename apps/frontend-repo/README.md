@@ -1,8 +1,21 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# EB Front-end with Next.js
 
 ## Getting Started
 
-First, run the development server:
+install dependencies:
+
+```bash
+npm install
+```
+
+setup `.env.local`:
+
+```bash
+# copy .env.example & fill the empty variables
+cp .env.example .env.local
+```
+
+run the development server:
 
 ```bash
 npm run dev
